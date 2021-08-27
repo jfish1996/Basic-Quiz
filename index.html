@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Quiz App</h3>
+      <div class="question-holder">
+        <div class="questionHeader">
+          <p>
+            Question <span id="currentQuestion">0</span> of
+            <span id="totalQuestions"></span>
+          </p>
+          <p>Question:</p>
+        </div>
+        <div id="q1" class="question">
+          <form>
+            <p>What is your quest:</p>
+            <input
+              type="radio"
+              id="to-find"
+              name="quest"
+              value="To find the holy grail"
+            />
+            <label for="to-find">To find the holy grail</label><br />
+            <input
+              type="radio"
+              id="to-eat"
+              name="quest"
+              value="to eat a taco"
+            />
+            <label for="to-eat">To eat a taco</label><br />
+            <br />
+            <button id="quest" type="submit" value="Submit">Next</button>
+          </form>
+        </div>
+
+        <div id="q2" class="question Hidden">
+          <form action="submit">
+            <p>What is your fav color</p>
+            <input type="radio" id="red" name="color" value="red" />
+            <label for="red">Red</label><br />
+            <input type="radio" id="green" name="color" value="green" />
+            <label for="green">Green</label><br />
+            <button id="color" type="submit" value="submit">Next</button>
+          </form>
+        </div>
+        <div id="q3" class="question Hidden">
+          <form>
+            <p>What is your fav food?</p>
+            <input type="radio" id="pizza" name="food" value="pizza" />
+            <label for="pizza">Pizza</label><br />
+            <input type="radio" id="ramen" name="food" value="ramen" />
+            <label for="female">Ramen</label><br />
+            <button id="food" type="submit" value="submit">Next</button>
+          </form>
+        </div>
+        <div class="question Hidden">
+          <h3>Correct Anwsers:</h3>
+          <p id="Correct">0</p>
+          <h3>Wrong Anwsers:</h3>
+          <p id="Wrong">0</p>
+        </div>
+      </div>
+      <p></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
